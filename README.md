@@ -1,1 +1,1 @@
-# Queue-Management-System
+A web-based platform where students can request and track the status of their ID or access card applications, while administrators process requests, manage records, and handle reissuance. The system provides a centralized way to streamline ID issuance and reduce processing delays.
