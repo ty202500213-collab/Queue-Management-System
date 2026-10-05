@@ -1,0 +1,114 @@
+.board-card {
+  border: 1px solid #e9e1dc;
+  border-radius: 15px;
+  background: white;
+  overflow: hidden;
+}
+
+.board-caption {
+  font-size: 10px;
+  color: #a18f8a;
+}
+
+.board-group {
+  padding: 22px 25px;
+  border-bottom: 1px solid #eee7e3;
+}
+
+.group-ready {
+  background: #f3f7f0;
+}
+
+.group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-heading h3 {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-count {
+  border-radius: 5px;
+  background: #f1eeeb;
+  font-size: 10px;
+  padding: 3px 7px;
+  color: #89766f;
+}
+
+.group-ready .group-count {
+  background: #e3edde;
+  color: #55784e;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-ready {
+  background: #5b8950;
+}
+
+.dot-preparing {
+  background: #6184b3;
+}
+
+.dot-pending {
+  background: #bd8d43;
+}
+
+.board-group > p {
+  font-size: 11px;
+  color: #9b8c85;
+  margin-top: 7px;
+}
+
+.queue-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.queue-chip {
+  border: 1px solid #e6dfd9;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -.5px;
+  color: #776762;
+  font-variant-numeric: tabular-nums;
+}
+
+.group-ready .queue-chip {
+  background: #e5efdf;
+  border-color: #d5e4cc;
+  color: #496d3e;
+}
+
+.group-preparing .queue-chip {
+  background: #f1f5fa;
+  border-color: #dfe7f1;
+  color: #4e719f;
+}
+
+.board-empty {
+  font-size: 12px;
+  color: #9b8c85;
+}
+
+.board-footnote {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #9d8d86;
+  padding: 16px 25px;
+}

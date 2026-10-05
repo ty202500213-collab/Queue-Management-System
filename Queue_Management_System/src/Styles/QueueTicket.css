@@ -1,0 +1,155 @@
+.ticket-card {
+  background: white;
+  border: 1px solid #e9e1dc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.status-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 7px 10px;
+  border-radius: 6px;
+}
+
+.badge-pending {
+  background: #f8edd9;
+  color: #946522;
+}
+
+.badge-preparing {
+  background: #eaf0f8;
+  color: #456b9c;
+}
+
+.badge-ready {
+  background: #eaf2e7;
+  color: #477246;
+}
+
+.badge-picked_up {
+  background: #f1eeeb;
+  color: #82736d;
+}
+
+.ticket-number {
+  text-align: center;
+  padding: 32px 26px 25px;
+}
+
+.ticket-number p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a28e8e;
+  font-weight: 600;
+}
+
+.ticket-number strong {
+  display: block;
+  font-size: clamp(48px, 7vw, 66px);
+  letter-spacing: -2px;
+  color: #90233c;
+  line-height: 1.4;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.ticket-number > span {
+  display: block;
+  color: #8b7c7d;
+  font-size: 12px;
+  max-width: 270px;
+  margin: 3px auto 0;
+  line-height: 1.7;
+}
+
+.order-progress {
+  display: flex;
+  list-style: none;
+  padding: 0 22px;
+  margin: 10px 0 24px;
+}
+
+.order-progress li {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  color: #a79a98;
+  font-size: 9px;
+}
+
+.order-progress li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #eee6e2;
+  top: 14px;
+  left: calc(50% + 19px);
+  width: calc(100% - 38px);
+}
+
+.step-circle {
+  border: 1px solid #e5ddd8;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  background: #faf8f5;
+  font-size: 10px;
+}
+
+.step-active .step-circle {
+  background: #90233c;
+  border-color: #90233c;
+  color: white;
+}
+
+.order-progress .step-active {
+  color: #90233c;
+  font-weight: 600;
+}
+
+.orders-ahead {
+  font-size: 11px;
+  color: #8e7a75;
+  background: #faf5ef;
+  padding: 12px 18px;
+  margin: 0 24px 24px;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.orders-ahead strong {
+  color: #6d4e43;
+}
+
+.ticket-details {
+  border-top: 1px dashed #e5d9d3;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.ticket-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ticket-details span {
+  font-size: 10px;
+  color: #9c8b86;
+}
+
+.ticket-details strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
